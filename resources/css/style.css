@@ -88,6 +88,18 @@ header span{
   text-decoration: none;
 }
 
+.tablet-menu{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem 0;
+}
+
+.tablet-menu a{
+  color: white;
+  text-decoration: none;
+}
+
 /* Product Section */
 
 .gallery{
@@ -102,6 +114,7 @@ header span{
 .product{
   width: 30%;
   border: 4px solid black;
+  overflow: hidden;
 }
 
 .image{
@@ -111,6 +124,7 @@ header span{
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .image img{
@@ -158,4 +172,84 @@ footer {
   margin-top: 4rem;
   background-color: black;
   color: white;
+}
+
+/* Tablet Mode */
+
+@media only screen and (max-width: 1024px){
+
+  .p3{
+    display: none;
+  }
+
+  .product{
+    width: 47%;
+  }
+
+  .tablet-menu{
+    display: flex;
+  }
+
+  .menu{
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 470px){
+
+  .headline_back{
+    height: 15rem;
+  }
+
+  .headline h2{
+    font-size: 0.77rem;
+  }
+
+  .headline h1{
+    font-size: 1rem;
+  }
+
+  .headline{
+    background-color: black;
+    width: 100%;
+    position: relative;
+    top: 10rem;
+    padding: 1rem 2rem;
+  }
+
+  .tablet-menu{
+    display: flex;
+  }
+
+  .menu{
+    display: none;
+  }
+
+  .p3, .p2{
+    display: none;
+  }
+
+  .gallery{
+    justify-content: center;
+  }
+
+  .product{
+    width: 90%;
+  }
+
+  .info{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info .location{
+    width: 90%;
+    margin-bottom: 0.5rem;
+  }
+
+  footer{
+    text-align: center;
+  }
+
 }
